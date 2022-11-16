@@ -1,0 +1,33 @@
+.logo,
+.logo-loading {
+  font-family: "Leckerli One", cursive;
+  background-color: var(--fourth);
+  width: 20rem;
+  height: 20rem;
+  display: grid;
+  place-content: center;
+  border-radius: 1.8rem;
+}
+.logo-loading {
+  background-color: var(--fourth);
+  animation: linear loading 2s infinite;
+}
+.logo h2,
+.logo-loading h2 {
+  font-size: 6rem;
+  color: var(--primary);
+  text-decoration: underline;
+  font-style: italic;
+  text-align: center;
+}
+@keyframes loading {
+  0% {
+    background-color: var(--fourth);
+  }
+  50% {
+    background-color: var(--primary);
+  }
+  100% {
+    background-color: var(--fourth);
+  }
+}
